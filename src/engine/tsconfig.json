@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "target": "es5",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@kit/*": ["src/kit/*"],
+      "@ui-kit/*": ["src/ui-kit/*"],
+      "@ui-md-bootstrap-kit/*": ["src/ui-md-bootstrap-kit/*"]
+    }
+  }
+}
