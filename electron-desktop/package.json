@@ -1,0 +1,29 @@
+{
+  "name": "electron-desktop",
+  "version": "0.1.0",
+  "author": "Igor Sergeev",
+  "private": false,
+  "main": "electron-main.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}

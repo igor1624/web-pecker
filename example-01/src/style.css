@@ -1,0 +1,32 @@
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.my-par {
+  font-weight: 700;
+  transition: background-color 500ms ease;
+}
+
+.my-par:hover {
+  background-color: blue;
+}
+
+@media (hover: hover) {
+  .my-par {
+    background-color: green;
+  }
+}
+
+@media (hover: none) {
+  .my-par {
+    background-color: red;
+  }
+
+  .my-par:hover {
+    background-color: red;
+  }
+}
+
+.my-par:active {
+  color: paleturquoise;
+}

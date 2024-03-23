@@ -1,0 +1,81 @@
+/* avoid wrapping div getting bigger than img or svg */
+img,
+svg {
+  display: block;
+}
+
+/* scroll bars */
+
+.-ui-kit-overflow-y-auto {
+  overflow: hidden;
+}
+
+.-ui-kit-overflow-x-auto {
+  overflow: hidden;
+}
+
+.-ui-kit-overflow-y-scroll {
+  overflow: hidden;
+}
+
+.-ui-kit-overflow-x-scroll {
+  overflow: hidden;
+}
+
+.-ui-kit-overflow-auto {
+  overflow: hidden;
+}
+
+.-ui-kit-overflow-scroll {
+  overflow: hidden;
+}
+
+.-ui-kit-scroll-bars-holder {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.-ui-kit-scrollable-content {
+  display: flow-root;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.-ui-kit-vertical-scroll-bar {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background-color: rgba(172, 172, 172, 0.32);
+}
+
+.-ui-kit-horizontal-scroll-bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 8px;
+  background-color: rgba(172, 172, 172, 0.32);
+}
+
+/*
+
+.-ui-kit-scroll-bars-hidden::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.-ui-kit-scroll-bars-hidden {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+ */
+
