@@ -2,7 +2,7 @@ import DeviceElement from "./device-element";
 declare namespace Device {
     const debounce: (callback: any, delay: number) => (...args: any) => void;
     const throttle: (callback: any, delay: number) => (...args: any) => void;
-    const textToHTML: (s: string) => string;
+    const textToHTML: (text: any) => any;
     const getWidth: () => number;
     const getHeight: () => number;
     const run: (htmlElement: HTMLElement, object: any) => void;

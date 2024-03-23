@@ -1,6 +1,5 @@
-import {Button, Container, Device, DeviceRouter, Paragraph, Image, Div, InlineImage} from "ui-kit";
+import {Device, DeviceRouter, Paragraph} from "ui-kit";
 import "./style.css";
-import ThemesSwitch from "./themes-switch";
 
 class AppRouter extends DeviceRouter {
 
@@ -13,7 +12,7 @@ class AppRouter extends DeviceRouter {
   }
 
   build() {
-    let paragraph = new Paragraph("HELLO WORLD");
+    const paragraph = new Paragraph("HELLO WORLDS");
     this.add(paragraph);
   }
 }

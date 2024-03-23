@@ -30,7 +30,7 @@ declare class DeviceWidget extends DeviceControl {
     setInnerHTML(innerHTML: string): void;
     createDeviceElement(): DeviceElement;
     createInnerDeviceElements(parentDeviceElement: DeviceElement): void;
-    createHTMLString(): string;
+    createHTMLString(): any;
     createScrollBars(): void;
     mountDeviceElement(parentHTMLElement: HTMLElement): void;
     createDeviceHTMLElement(parentHTMLElement: HTMLElement): void;
