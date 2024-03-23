@@ -1,4 +1,4 @@
-import {Button, Device, DeviceRouter, Paragraph} from "ui-kit";
+import {Button, Container, Device, DeviceRouter, Paragraph, Image, Div, InlineImage} from "ui-kit";
 import "./style.css";
 import ThemesSwitch from "./themes-switch";
 
