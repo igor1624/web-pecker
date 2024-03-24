@@ -1,4 +1,4 @@
-import {Device, DeviceRouter, Paragraph} from "ui-kit";
+import {Device, DeviceRouter, Div, Paragraph, SpinnerBorder} from "ui-kit";
 import "./style.css";
 
 class AppRouter extends DeviceRouter {
@@ -12,8 +12,13 @@ class AppRouter extends DeviceRouter {
   }
 
   build() {
-    const paragraph = new Paragraph("HELLO WORLDS");
+    let paragraph = new Paragraph("HELLO WORLD 2");
     this.add(paragraph);
+    paragraph = new Paragraph("HELLO WORLD 2", this);
+  }
+
+  handleClick() {
+    console.log("CLICKED");
   }
 }
 

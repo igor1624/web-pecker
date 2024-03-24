@@ -14,4 +14,5 @@ import Button from "./html-widgets/button";
 import { UnorderedList, OrderedList, ListItem } from "./html-widgets/lists";
 import { Container, ContainerFluid } from "./containers/containers";
 import Row from "./containers/row";
-export { Device, DeviceElement, DeviceComponent, DeviceWidget, DeviceRouter, DeviceRoute, DeviceLink, Span, Div, Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Paragraph, Section, Image, InlineImage, Icon, Button, UnorderedList, OrderedList, ListItem, Container, ContainerFluid, Row, };
+import SpinnerBorder from "./containers/spinner-border";
+export { Device, DeviceElement, DeviceComponent, DeviceWidget, DeviceRouter, DeviceRoute, DeviceLink, Span, Div, Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Paragraph, Section, Image, InlineImage, Icon, Button, UnorderedList, OrderedList, ListItem, Container, ContainerFluid, Row, SpinnerBorder, };
