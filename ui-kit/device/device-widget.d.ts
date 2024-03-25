@@ -3,11 +3,11 @@ import DeviceControl from "./device-control";
 declare class DeviceWidget extends DeviceControl {
     readonly tag: string;
     classNames: string[];
-    children: any[];
-    innerText: string;
-    innerHTML: string;
-    scrollBarsHolderDeviceElement: ScrollBarsHolderDeviceElement;
-    scrollableContentDeviceElement: DeviceElement;
+    children: any[] | undefined;
+    innerText: string | undefined;
+    innerHTML: string | undefined;
+    scrollBarsHolderDeviceElement: ScrollBarsHolderDeviceElement | undefined;
+    scrollableContentDeviceElement: DeviceElement | undefined;
     constructor(tag: string, ...params: any);
     getTag(): string;
     getClassName(): string;
@@ -24,9 +24,9 @@ declare class DeviceWidget extends DeviceControl {
     getChildren(): any[];
     add(child: any): any;
     removeAll(): void;
-    getInnerText(): string;
+    getInnerText(): string | undefined;
     setInnerText(innerText: string): void;
-    getInnerHTML(): string;
+    getInnerHTML(): string | undefined;
     setInnerHTML(innerHTML: string): void;
     createDeviceElement(): DeviceElement;
     createInnerDeviceElements(parentDeviceElement: DeviceElement): void;
@@ -35,12 +35,13 @@ declare class DeviceWidget extends DeviceControl {
     mountDeviceElement(parentHTMLElement: HTMLElement): void;
     createDeviceHTMLElement(parentHTMLElement: HTMLElement): void;
     callDidMount(): void;
-    getBoundingClientRect(): DOMRect;
+    getBoundingClientRect(): DOMRect | undefined;
 }
 declare class ScrollBarsHolderDeviceElement extends DeviceElement {
     deviceWidget: DeviceWidget;
     overflow: "y-auto" | "x-auto" | "y-scroll" | "x-scroll" | "auto" | "scroll";
-    htmlVerticalScrollBar: HTMLElement;
-    htmlHorizontalScrollBar: HTMLElement;
+    htmlVerticalScrollBar: HTMLElement | undefined;
+    htmlHorizontalScrollBar: HTMLElement | undefined;
+    constructor(deviceWidget: DeviceWidget, overflow: "y-auto" | "x-auto" | "y-scroll" | "x-scroll" | "auto" | "scroll");
 }
 export default DeviceWidget;

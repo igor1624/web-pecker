@@ -5,7 +5,6 @@ declare class Image extends DeviceWidget {
     setAlt(alt: string): void;
 }
 declare class InlineImage extends DeviceWidget {
-    source: string;
     constructor(source: string, ...params: any);
 }
 export { Image, InlineImage };

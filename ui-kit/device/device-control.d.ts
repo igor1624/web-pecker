@@ -5,7 +5,7 @@ export declare class DeviceControl {
     readonly $key: string;
     props: any;
     state: any;
-    deviceElement: DeviceElement;
+    deviceElement: DeviceElement | null;
     observedShelves: ObservedShelf[];
     constructor();
     static get$Key: () => number;
@@ -18,8 +18,8 @@ export declare class DeviceControl {
     callDidMount(): void;
     mountObservedShelves(): void;
     didMount(): void;
-    getDeviceElement(): DeviceElement;
-    getHTMLElement(): HTMLElement;
+    getDeviceElement(): DeviceElement | null;
+    getHTMLElement(): HTMLElement | null | undefined;
     forceUpdate(): void;
     callWillUnmount(): void;
     unmountObservedShelves(): void;

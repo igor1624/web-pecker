@@ -3,7 +3,7 @@ declare class DeviceStore {
     protected state: any;
     shelfObserverDescriptors: ShelfObserverDescriptor[];
     constructor();
-    startObservingShelf(deviceControl: DeviceControl, shelfName: string): DeviceControl;
+    startObservingShelf(deviceControl: DeviceControl, shelfName: string): DeviceControl | null;
     stopObservingShelf(deviceControl: DeviceControl, shelfName: string): void;
     removeObserver(deviceControl: DeviceControl): void;
     getState(): any;
@@ -12,7 +12,7 @@ declare class DeviceStore {
     forceUpdate(): void;
 }
 declare class ShelfObserverDescriptor {
-    deviceControl: DeviceControl;
+    deviceControl: DeviceControl | null;
     shelfName: string;
     needsUpdate: boolean;
     constructor(deviceControl: DeviceControl, shelfName: string);

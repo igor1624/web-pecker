@@ -1,13 +1,12 @@
-import DeviceControl from "./device-control";
 export declare class DeviceElement {
     static $nextKey: number;
     tag: any;
-    creator: DeviceControl | Function | null;
+    creator: any;
     props: any;
-    outerDeviceElement: DeviceElement;
+    outerDeviceElement: DeviceElement | undefined;
     innerDeviceElements: DeviceElement[];
-    htmlElement: HTMLElement;
-    constructor(tag: any, creator: DeviceControl | Function | null, props?: any);
+    htmlElement: HTMLElement | null;
+    constructor(tag: any, creator: any, props?: any);
     createHTMLString(): any;
     createStyleString(styleProps: any): string;
     createEventHandlers(htmlElement: HTMLElement): void;
